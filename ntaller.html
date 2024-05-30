@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       a{
+        color: aqua;
+        transition-property: opacity, left;
+  transition-duration: 3s, 5s;
+       }
+
+       a:hover{
+        color: blueviolet;
+       }
+
+       .cursor{
+
+        cursor: move;
+       }
+
+       a:link {
+        color: green;
+}
+
+       a:visited{
+        color: rgb(38, 20, 236);
+       }
+
+       .hover-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 221, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: rgb(7, 219, 7);
+}
+
+
+.hover-image {
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+.hover-div {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(170, 122, 122);
+    transition: background-color 0.3s ease;
+}
+
+.hover-div:hover {
+    background-color: gray;
+}
+
+input[type="text"]:focus {
+    border: 2px solid blue;
+}
+
+input[type="text"]:active {
+    background-color: lightyellow;
+}
+
+textarea {
+    cursor: text;
+}
+
+input[type="text"]::first-letter {
+    font-size: 1.2em;
+    color: red;
+}
+
+.custom-list li::after {
+    content: " ➔";
+}
+
+.custom-list li::before {
+    content: "• ";
+    color: red;
+}
+
+.ordered-list li::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+
+::selection {
+    background: yellow;
+    color: black;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    background-color: blue;
+    color: white;
+}
+
+
+.scroll-indicator {
+    height: 1500px; /* Para simular desplazamiento */
+    background: linear-gradient(to bottom, lightblue, lightgreen);
+}
+
+    </style>
+</head>
+<body>
+    <a href="https://www.ejemplo.com">Enlace 1</a>
+    <a href="https://www.ejemplo.com">Enlace 2</a>
+    <a href="https://www.ejemplo.com">Enlace 3</a>
+    
+    <button class="hover-button">Botón</button>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/640px-PNG_transparency_demonstration_1.png
+" alt="Imagen" class="hover-image">
+    <div class="hover-div">Div</div>
+
+    <form>
+        <input type="text" placeholder="Campo de texto">
+        <textarea placeholder="Área de texto"></textarea>
+    </form>
+
+
+    <ul class="custom-list">
+        <li>santi1</li>
+        <li>santi2</li>
+        <li>santi3</li>
+    </ul>
+    <ol class="ordered-list">
+        <li>elemento1</li>
+        <li>elemento2</li>
+        <li>elemento3</li>
+    </ol>
+
+</body>
+</html>

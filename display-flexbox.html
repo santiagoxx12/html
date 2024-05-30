@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 200px;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background-color: chartreuse;
+        }
+        .container .item:nth-child(odd){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+</body>
+</html>
